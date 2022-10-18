@@ -9,3 +9,4 @@ interfaces
 .idea
 *.charm
 src/config.yaml
+.zuul.yaml
