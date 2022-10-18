@@ -8,3 +8,4 @@ interfaces
 *.pyc
 .idea
 *.charm
+src/config.yaml
