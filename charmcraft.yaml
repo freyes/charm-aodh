@@ -1,7 +1,15 @@
 type: charm
 
 parts:
+  buck:
+    plugin: nil
+    build-snaps:
+      - buck/latest/edge
+    override-build: |
+      cd /root/parts/charm/
+      buck up
   charm:
+    after: [buck]
     source: src/
     plugin: reactive
     build-snaps:
